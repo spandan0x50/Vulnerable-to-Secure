@@ -1,6 +1,6 @@
 `ssrf.go` contains a **Server-Side Request Forgery (SSRF)** vulnerability.
 
-![SSRF](ssrf_1.png)
+![SSRF](ssrf_01.png)
 > User’s browser (`example.com`) → Server fetches (`example.com`) → Server returns the fetched response back to the user’s browser. User's browser doesn't fetch `example.com`.
 
 There are multiple ways to mitigate this SSRF issue. One of the most effective approaches is implementing a strict allowlist using a `map`. For example:
