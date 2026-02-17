@@ -17,4 +17,4 @@ This allows an attacker to access internal resources, for example:
 
 Next, we’ll examine the different approaches developers use to fix this issue, why a solution that works in one scenario may fail in another, the common mistakes they make, and how attackers manage to bypass those fixes.
 
-Go to [Case II](SSRF/Case%20II/)
+Go to [Case II](/SSRF/Case%20II/)
