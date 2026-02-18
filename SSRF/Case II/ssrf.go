@@ -31,6 +31,7 @@ func ssrf(w http.ResponseWriter, r *http.Request){
 			fmt.Println(err)
 		}
 		io.WriteString(w, string(body))
+		return
 	}
 	w.WriteHeader(http.StatusForbidden)
 	io.WriteString(w, "Not Allowed!")
