@@ -1,4 +1,4 @@
-This time, [ssrf.go](ssrf.go) explicitly checks the hostname. So, if we directly use `https://example.com` or `https://<internal-ip>/InternalEndpoint`, it will fail since it does not match the expected hostname. This may look like a perfect fix, but it actually is not.
+This time, [ssrf.go](ssrf.go) explicitly checks the hostname. So, if we directly use `https://x.vercel.app@example.com` or `https://x.vercel.app.example.com`, it will fail since it does not match the expected hostname `*.vercel.app`. This may look like a perfect fix, but it actually is not.
 
 ![SSRF04](images/ssrf04.png)
 
