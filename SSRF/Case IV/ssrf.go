@@ -44,8 +44,8 @@ func ssrf(w http.ResponseWriter, r *http.Request){
 			io.WriteString(w, string(body))
 			return
 		}
-		io.WriteString(w, "Final redirect doesn't match the white-list")
 		w.WriteHeader(http.StatusForbidden)
+		io.WriteString(w, "Final redirect doesn't match the white-list")
 	}
 	w.WriteHeader(http.StatusForbidden)
 	io.WriteString(w, "Not Allowed!")
