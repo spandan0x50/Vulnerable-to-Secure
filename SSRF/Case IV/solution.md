@@ -14,7 +14,7 @@ A **DNS rebinding** scenario can be used to bypass the validation entirely.
 
 1. In real-world scenarios, servers often block access to internal or sensitive IP ranges and only allow external domains.
 2. An attacker can register a domain and configure its A/AAAA records to resolve to an internal IP address.
-   ![SSRF01](images/ssrf01.png)
+   ![SSRF03](images/ssrf03.png)
 
    > Alternatively, services like [nip.io](https://nip.io/) can be used.
 3. In this case, all hostname-based checks pass successfully. However, after validation, the allowed domain resolves to an internal IP via its A/AAAA record, resulting in SSRF.
