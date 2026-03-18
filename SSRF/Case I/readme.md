@@ -1,4 +1,4 @@
-Take a close look at `ssrf.go`. There’s a very simple code snippet that does the following:
+Take a close look at [ssrf.go](ssrf.go). There’s a very simple code snippet that does the following:
 
 1. Accepts a URL from the user via the `?ssrf` parameter.
 2. Fetches that URL server-side.
